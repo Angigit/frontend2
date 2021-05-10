@@ -1,0 +1,21 @@
+
+@import './defaults';
+@import './inner-page';
+@import './log-in-page';
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+input {
+	@include default-input;
+}
+
+
+button {
+	@include default-button;
+}
+
+.js-hidden {
+	display: none !important;
+}

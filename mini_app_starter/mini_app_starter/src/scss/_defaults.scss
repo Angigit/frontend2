@@ -1,0 +1,32 @@
+@mixin flex-center {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+@mixin default-button {
+	background: linear-gradient(to bottom, #9dc4e8 0%, #207ce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border: 1px solid #e4e4e4;
+	border-radius: 100px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	margin: 5px;
+	outline: none;
+	padding: 10px 30px;
+}
+
+@mixin default-input {
+	border: 1px solid #e4e4e4;
+	border-radius: 100px;
+	box-sizing: border-box;
+	margin: 10px 0;
+	outline: none;
+	padding: 10px;
+	width: 100%;
+
+	&::placeholder {
+		color: #e4e4e4;
+	}
+
+}

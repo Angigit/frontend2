@@ -1,0 +1,80 @@
+.login-signup-container {
+	background-color: #f4f4f4;
+	border-radius: 15px;
+	box-shadow: 0 0 47px -12px rgba(0, 0, 0, 0.5);
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 60px;
+	padding: 30px;
+	width: 300px;
+}
+
+.top-buttons {
+	background-color: #364b70;
+	border-radius: 100px;
+	display: flex;
+	justify-content: space-around;
+	margin: 20px auto 0;
+	overflow: hidden;
+	position: relative;
+	width: 250px;
+
+	[class^='button'] {
+
+		@include flex-center;
+		color: #fff;
+		cursor: pointer;
+		height: 50px;
+		position: relative;
+		user-select: none;
+		z-index: 1;
+	}
+
+	.active {
+		background-color: #6f88e6;
+		border-radius: 100px;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		transition: left .3s ease-in-out;
+		width: 50%;
+		z-index: 0;
+	}
+
+	.js-left-50 {
+		left: 50%;
+	}
+  
+}
+
+
+.block-log-in > *,
+.block-sign-up > * {
+	display: flex;
+	flex-direction: row;
+}
+
+.block-log-in,
+.block-sign-up {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	height: 80%;
+}
+
+.log-in-button,
+.sign-up-button {
+	@include flex-center;
+	margin-top: auto;
+}
+
+.forgot-password {
+	color: #9b9baa;
+	cursor: pointer;
+	font-size: 12px;
+	height: 37px;
+	margin-left: auto;
+	user-select: none;
+}
+
